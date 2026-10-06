@@ -1,0 +1,69 @@
+{
+    "run_id": "streamlit_s2_normal",
+    "timestamp": "20260503_114906",
+    "error_injected": null,
+    "journal": [
+        {
+            "step_id": "step_1",
+            "action": "read_csv",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_2",
+            "action": "validate_schema",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_3",
+            "action": "compute_metrics",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_4",
+            "action": "http_get",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_5",
+            "action": "generate_report",
+            "success": true,
+            "decision": "stop",
+            "retry": 0
+        }
+    ],
+    "final_report": {
+        "total_production": 1075,
+        "avg_defect_rate": 0.06444444444444446,
+        "avg_lead_time": 2.6666666666666665,
+        "industrial_trend": [
+            100,
+            105,
+            102
+        ],
+        "status": "OK"
+    },
+    "cache_stats": {
+        "compute": {
+            "total_calls": 1,
+            "hits": 0,
+            "misses": 1,
+            "hit_ratio": 0.0
+        },
+        "planner": {
+            "total_calls": 5,
+            "hits": 0,
+            "misses": 5,
+            "hit_ratio": 0.0
+        },
+        "cache_size": 1,
+        "plan_cache_size": 5
+    }
+}

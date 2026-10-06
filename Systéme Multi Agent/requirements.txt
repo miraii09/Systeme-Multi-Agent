@@ -1,0 +1,3 @@
+pandas
+streamlit
+# requests  # uniquement pour l'appel à la vraie API World Bank (désactivé par défaut)

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Journaux générés à chaque exécution
+logs/*.json
+*.log
+
+# Configuration locale
+/settings.json
+.vscode/
+.idea/
+.streamlit/secrets.toml
+
+# Système
+.DS_Store
+Thumbs.db

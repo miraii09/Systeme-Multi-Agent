@@ -1,0 +1,65 @@
+{
+    "run_id": "streamlit_s1_invalid_json",
+    "timestamp": "20260504_103007",
+    "error_injected": "invalid_json",
+    "journal": [
+        {
+            "step_id": "step_1",
+            "action": "read_csv",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_2",
+            "action": "validate_schema",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_3",
+            "action": "compute_metrics",
+            "success": true,
+            "decision": "continue",
+            "retry": 0
+        },
+        {
+            "step_id": "step_4",
+            "action": "generate_scenario1_report",
+            "success": true,
+            "decision": "stop",
+            "retry": 0
+        }
+    ],
+    "final_report": {
+        "top_factories": [
+            "F3",
+            "F1"
+        ],
+        "avg_defect_rate": 0.064,
+        "delayed_factories": [
+            "F2"
+        ],
+        "alerts": [
+            "Factory F2 has high defect rate",
+            "Factory F2 has excessive downtime"
+        ]
+    },
+    "cache_stats": {
+        "compute": {
+            "total_calls": 1,
+            "hits": 0,
+            "misses": 1,
+            "hit_ratio": 0.0
+        },
+        "planner": {
+            "total_calls": 4,
+            "hits": 0,
+            "misses": 4,
+            "hit_ratio": 0.0
+        },
+        "cache_size": 1,
+        "plan_cache_size": 4
+    }
+}
